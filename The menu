@@ -1,0 +1,83 @@
+total=0
+
+
+#iteration 1
+
+
+order=[]
+print("Chicken-5.25")
+print("Beef-6.25")
+print("Tofu-5.75")
+
+
+sandwich=["Chicken","Beef","Tofu"]
+choice=input("What sandwich would you like?")
+
+
+if (choice=="Chicken"):
+print(sandwich[0])
+order.append("Chicken Sandwich")
+total+=5.25
+if (sandwich== "Beef"):
+print(sandcost[1])
+order.append("Beef Sandwich")
+total+=6.25
+if (sandwich== "Tofu"):
+print(sandcost[2])
+order.append("Tofu Sandwich")
+total+=5.75
+
+
+#iteration 2
+
+
+beverage=["Small","Medium","Large"]
+
+
+bev=input("Would you like a beverage?")
+if(bev=="Yes"):
+print ("Small-1.00")
+print ("Medium- 1.75")
+print ("Large- 2.25")
+size=input ("What Size?")
+if (size=="Small"):
+order.append("Small Drink")
+total+= 1.00
+if (size== 'Medium'):
+order.append("Medium Drink")
+total+= 1.75
+if (size=="Large"):
+order.append("Large Drink")
+total+=2.25
+if(bev=="No"):
+print(total)
+
+
+#iteration 3
+
+
+fry=input("Would you like french fries?")
+if (fry=="Yes"):
+print("Small-1.00")
+print("Medium-1.50")
+print("Large-2.00")
+s2=input ("What Size?")
+if(s2=="Small"):
+mega=input("Would you like to Mega-size your Fries?")
+print("Yes or No")
+if(mega=="Yes"):
+total+=2.00
+if(mega=="No"):
+total+=1.00
+if(s2=="Medium"):
+total+=1.50
+if(s2=="Large"):
+total+=2.00
+
+
+#iteration 4
+
+
+ketchup=input("How many ketchup packets would you like?")
+packetprice= int(ketchup) * .25
+print("Your total is", total+packetprice)
